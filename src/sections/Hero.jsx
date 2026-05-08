@@ -254,7 +254,7 @@ const Hero = () => {
 
               <img
                 ref={imageRef}
-                src="/profile.jpg"
+                src="/profile.jpeg"
                 alt="profile"
                 className="w-[280px] sm:w-[380px] lg:w-[440px] h-[400px] sm:h-[540px] lg:h-[580px] object-cover"
               />
