@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #050816;
+  color: white;
+  overflow-x: hidden;
+  font-family: Inter, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(139,92,246,0.15), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(59,130,246,0.15), transparent 40%);
+  z-index: -1;
+}
+
+.glass {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #8b5cf6, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow {
+  box-shadow:
+    0 0 30px rgba(139,92,246,0.5),
+    0 0 60px rgba(59,130,246,0.2);
+}
+
+.cursor-glow {
+  width: 20px;
+  height: 20px;
+  background: rgba(139,92,246,0.8);
+  position: fixed;
+  border-radius: 9999px;
+  pointer-events: none;
+  filter: blur(5px);
+  z-index: 9999;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#8b5cf6,#3b82f6);
+  border-radius: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a,
+button {
+  position: relative;
+  z-index: 50;
+  pointer-events: auto;
+  cursor: pointer;
+}
