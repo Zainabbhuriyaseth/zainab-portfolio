@@ -71,7 +71,7 @@ const Hero = () => {
 
           <h1 className="text-[60px] sm:text-[80px] lg:text-[100px] font-black leading-[0.95] tracking-[-4px]">
             <span className="text-white">
-              Zainabbibi
+              Zainabbibi N.
             </span>
 
             <br />

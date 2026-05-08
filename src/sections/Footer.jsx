@@ -9,7 +9,7 @@ const Footer = () => {
         </h2>
 
         <p className="text-gray-400 mt-4 md:mt-0 text-center">
-          © 2026 Zainabbibi Bhuriyaseth.
+          © 2026 Zainabbibi N. Bhuriyaseth.
           All rights reserved.
         </p>
 
