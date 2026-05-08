@@ -48,7 +48,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-[#030014] px-4 sm:px-6 pt-28 sm:pt-32"
+      className="relative min-h-screen flex items-center overflow-hidden bg-[#030014] px-4 sm:px-6 lg:px-8 pt-28 sm:pt-32"
     >
       {/* Background Glow */}
 
@@ -83,38 +83,15 @@ const Hero = () => {
 
           </div>
 
-          {/* Main Heading */}
-
-          {/* Main Heading */}
+          {/* Heading */}
 
           <h1 className="font-black leading-[1] tracking-[-2px]">
-
-            {/* First Name */}
 
             <span className="block text-white text-[42px] sm:text-[60px] md:text-[72px] lg:text-[86px]">
               Zainabbibi
             </span>
 
-            {/* Last Name */}
-
-            <span
-              className="
-      block
-      bg-gradient-to-r
-      from-purple-400
-      via-violet-500
-      to-blue-500
-      bg-clip-text
-      text-transparent
-
-      text-[34px]
-      sm:text-[48px]
-      md:text-[62px]
-      lg:text-[76px]
-
-      leading-[1.05]
-    "
-            >
+            <span className="block bg-gradient-to-r from-purple-400 via-violet-500 to-blue-500 bg-clip-text text-transparent text-[30px] sm:text-[46px] md:text-[58px] lg:text-[72px] leading-[1.05]">
               N. Bhuriyaseth
             </span>
 
@@ -238,15 +215,13 @@ const Hero = () => {
 
           <div className="absolute w-[350px] sm:w-[450px] h-[350px] sm:h-[450px] rounded-full bg-gradient-to-r from-purple-600/30 to-blue-600/30 blur-[120px]" />
 
-          {/* Animated Ring */}
+          {/* Ring */}
 
           <div className="absolute w-[380px] sm:w-[520px] h-[380px] sm:h-[520px] rounded-full border border-purple-500/20 animate-spin-slow" />
 
-          {/* Second Ring */}
-
           <div className="absolute w-[320px] sm:w-[460px] h-[320px] sm:h-[460px] rounded-full border border-blue-500/10 animate-pulse" />
 
-          {/* Profile Card */}
+          {/* Image */}
 
           <div className="relative z-20 p-[2px] rounded-[45px] bg-gradient-to-b from-purple-500/40 to-blue-500/20 shadow-[0_0_100px_rgba(139,92,246,0.35)]">
 
@@ -269,61 +244,119 @@ const Hero = () => {
             {...floatingAnimation}
             className="absolute top-5 sm:top-10 left-0 z-30"
           >
-
             <div className="glass p-3 sm:p-5 rounded-3xl border border-cyan-500/20 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
-
               <FaReact className="text-3xl sm:text-5xl text-cyan-400" />
-
             </div>
-
           </motion.div>
 
           {/* JS */}
 
           <motion.div
             {...floatingAnimation}
-            transition={{ ...floatingAnimation.transition, duration: 2.8 }}
             className="absolute top-16 sm:top-24 right-0 z-30"
           >
-
             <div className="glass p-3 sm:p-5 rounded-3xl border border-yellow-500/20 shadow-[0_0_40px_rgba(250,204,21,0.25)]">
-
               <FaJs className="text-3xl sm:text-5xl text-yellow-400" />
-
             </div>
-
           </motion.div>
 
           {/* GitHub */}
 
           <motion.div
             {...floatingAnimation}
-            transition={{ ...floatingAnimation.transition, duration: 2.2 }}
             className="absolute bottom-10 sm:bottom-16 left-2 sm:left-5 z-30"
           >
-
             <div className="glass p-3 sm:p-5 rounded-3xl border border-white/10 shadow-[0_0_40px_rgba(255,255,255,0.15)]">
-
               <FaGithub className="text-3xl sm:text-5xl text-white" />
-
             </div>
-
           </motion.div>
 
           {/* TypeScript */}
 
           <motion.div
             {...floatingAnimation}
-            transition={{ ...floatingAnimation.transition, duration: 2.4 }}
             className="absolute bottom-16 sm:bottom-20 right-0 z-30"
           >
-
             <div className="glass p-3 sm:p-5 rounded-3xl border border-blue-500/20 shadow-[0_0_40px_rgba(59,130,246,0.25)]">
-
               <SiTypescript className="text-3xl sm:text-5xl text-blue-400" />
-
             </div>
+          </motion.div>
 
+          {/* Tailwind */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute top-[40%] right-6 sm:right-12 z-30"
+          >
+            <div className="glass p-3 sm:p-5 rounded-3xl border border-cyan-500/20 shadow-[0_0_40px_rgba(34,211,238,0.25)]">
+              <SiTailwindcss className="text-3xl sm:text-5xl text-cyan-300" />
+            </div>
+          </motion.div>
+
+          {/* Node.js */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute top-[42%] left-[-5px] sm:left-[-20px] z-30"
+          >
+            <div className="glass p-3 sm:p-5 rounded-3xl border border-green-500/20 shadow-[0_0_40px_rgba(34,197,94,0.25)]">
+              <FaNodeJs className="text-3xl sm:text-5xl text-green-500" />
+            </div>
+          </motion.div>
+
+          {/* MongoDB */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute bottom-[34%] right-[-5px] sm:right-[-10px] z-30"
+          >
+            <div className="glass p-3 sm:p-5 rounded-3xl border border-green-400/20 shadow-[0_0_40px_rgba(74,222,128,0.25)]">
+              <SiMongodb className="text-3xl sm:text-5xl text-green-400" />
+            </div>
+          </motion.div>
+
+          {/* WordPress */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute bottom-[8%] left-[18%] z-30 hidden sm:block"
+          >
+            <div className="glass p-5 rounded-3xl border border-blue-300/20 shadow-[0_0_40px_rgba(147,197,253,0.25)]">
+              <FaWordpress className="text-5xl text-blue-300" />
+            </div>
+          </motion.div>
+
+          {/* Figma */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute top-[14%] left-[14%] z-30 hidden sm:block"
+          >
+            <div className="glass p-5 rounded-3xl border border-pink-500/20 shadow-[0_0_40px_rgba(236,72,153,0.25)]">
+              <FaFigma className="text-5xl text-pink-500" />
+            </div>
+          </motion.div>
+
+          {/* HTML */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute top-[65%] left-[-5px] sm:left-[-10px] z-30"
+          >
+            <div className="glass p-3 sm:p-5 rounded-3xl border border-orange-500/20 shadow-[0_0_40px_rgba(249,115,22,0.25)]">
+              <SiHtml5 className="text-3xl sm:text-5xl text-orange-500" />
+            </div>
+          </motion.div>
+
+          {/* CSS */}
+
+          <motion.div
+            {...floatingAnimation}
+            className="absolute top-[70%] right-[16%] z-30 hidden sm:block"
+          >
+            <div className="glass p-5 rounded-3xl border border-blue-400/20 shadow-[0_0_40px_rgba(96,165,250,0.25)]">
+              <FaCss3Alt className="text-5xl text-blue-400" />
+            </div>
           </motion.div>
 
         </motion.div>
